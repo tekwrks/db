@@ -1,2 +1,6 @@
 .env
-*.js
+scripts/*
+
+.git
+.gitignore
+.dockerignore
