@@ -13,8 +13,8 @@ run:
 		--name ${repo}-${name}-dev \
 		--env-file .env \
 		-p 27017:27017 \
-		-v /data/quackup/db:/data/db \
-		-v /data/quackup/configdb:/data/configdb \
+		-v ./.DATA/db:/data/db \
+		-v ./.DATA/configdb:/data/configdb \
 		-t ${repo}/${name}:${version}
 
 .PHONY:kill
