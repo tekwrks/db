@@ -13,8 +13,8 @@ run:
 		--name ${repo}-${name}-dev \
 		--env-file .env \
 		-p 27017:27017 \
-		-v ./.DATA/db:/data/db \
-		-v ./.DATA/configdb:/data/configdb \
+		--mount type=bind,source=$$(pwd)/DATA/db,target=/data/db \
+		--mount type=bind,source=$$(pwd)/DATA/configdb,target=/data/configdb \
 		-t ${repo}/${name}:${version}
 
 .PHONY:kill
