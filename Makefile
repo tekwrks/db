@@ -1,5 +1,5 @@
 repo=quackup
-name=db
+name=database
 version=1.0.0
 
 .PHONY:build
