@@ -1,7 +1,0 @@
-.env
-scripts/*
-DATA
-
-.git
-.gitignore
-.dockerignore
