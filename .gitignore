@@ -1,3 +1,2 @@
 .env
-DATA
-scripts/*
+*.js
